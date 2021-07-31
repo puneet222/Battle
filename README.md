@@ -14,8 +14,8 @@
 _Tested it for mac only, I'm sure it will work on Linux but for windows not so sure :P_
 ####    For MAC 
 - run ```./battle``` _(it will pick input.txt)_
-<br />
-OR
+  <br />
+  OR
 - run ```./battle <PATH TO INPUT FILE>```
 
 ####    For Linux
