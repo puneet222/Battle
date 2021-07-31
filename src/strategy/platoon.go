@@ -45,18 +45,6 @@ func (p Platoon) CanWin(opp Platoon) bool {
 	return p.Soldiers > opp.Soldiers
 }
 
-// CanWinOver function returns a list of opp platoons
-//	whom a particular platoon can win
-func (p Platoon) CanWinOver(oppPlatoons []Platoon) []Platoon {
-	winPlatoons := make([]Platoon, 0)
-	for _, op := range oppPlatoons {
-		if p.CanWin(op) {
-			winPlatoons = append(winPlatoons, op)
-		}
-	}
-	return winPlatoons
-}
-
 // CanDefeatedBy function returns a list of platoons
 //	who can defeat a particular platoon
 func (p Platoon) CanDefeatedBy(platoons []Platoon) []Platoon {

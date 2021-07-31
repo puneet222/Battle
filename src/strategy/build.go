@@ -27,11 +27,6 @@ func BuildStrategy(rawData string) string {
 		// sort win over platoons based on defeat map
 		// lesser value in defeat map can defeat opponent first
 		updateDefeatOrder(oppArmy, defeatMap)
-
-		//// sort kings army based on number of platoons it can handle
-		//sort.SliceStable(kingArmy, func(i, j int) bool {
-		//	return len(canDefeatedByPlatoons[kingArmy[i]]) < len(canDefeatedByPlatoons[kingArmy[j]])
-		//})
 		// battle
 		order, isWin := battle(kingArmy, oppArmy)
 		if isWin {
